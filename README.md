@@ -4,6 +4,26 @@ Production-grade single-user **task & time-tracking** React SPA. JWT auth, task 
 
 **Demo account:** email `demo1234@gmail.com` · password `demo1234`
 
+## Live Demo
+
+[TaskTracker Live Demo](https://task-tracker-by-vikas.netlify.app/)
+
+## Source Code
+
+- [Frontend Repository](https://github.com/NeXTcanCode/task_mgmt_frontend)
+- [Backend Repository](https://github.com/NeXTcanCode/task_mgmt_backend)
+
+Use the demo account above for easier review.
+
+## Review Checklist
+
+- ✅ Local development setup instructions
+- ✅ Brief frontend tech-stack summary
+- ✅ Live deployed link
+- ✅ Live demo link is available above
+- ✅ Working authentication with protected routes
+- ✅ Optional test credentials are provided above
+
 ## Tech Stack
 
 | Concern          | Choice                                              |
