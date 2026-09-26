@@ -1,2 +1,2 @@
-/api/*  https://<render-app>.onrender.com/api/:splat  200
+/api/*  https://task-mgmt-backend-1vm3.onrender.com/api/:splat  200
 /*      /index.html                                   200
