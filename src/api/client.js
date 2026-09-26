@@ -8,7 +8,9 @@ export class ApiError extends Error {
 
 // Every request goes through here: cookie auth, JSON in/out, { success, data } unwrapped
 export async function apiFetch(path, { method = 'GET', body, query } = {}) {
-  const baseUrl = import.meta.env.VITE_API_URL || '';
+  // Production uses Netlify's /api proxy so cookies are first-party.
+  // Keep the optional direct URL for local development only.
+  const baseUrl = import.meta.env.PROD ? '' : (import.meta.env.VITE_API_URL || '');
   const params = new URLSearchParams(Object.entries(query || {}).filter(([, value]) => value !== undefined && value !== null && value !== ''));
   const url = `${baseUrl}/api${path}${params.toString() ? `?${params}` : ''}`;
 
