@@ -358,10 +358,6 @@ body {
 }
 
 /* ---------- Page ---------- */
-.page {
-  max-width: 1400px;
-  margin-inline: auto;
-}
 .page-header {
   display: flex;
   align-items: center;
@@ -875,8 +871,8 @@ body {
   }
 }
 @media (min-width: 1600px) {
-  .page {
-    max-width: 1560px;
+  .col-priority {
+    width: 140px;
   }
   .col-time {
     width: 190px;
@@ -886,6 +882,20 @@ body {
   }
   .col-due {
     width: 160px;
+  }
+}
+@media (min-width: 1920px) {
+  .col-priority {
+    width: 160px;
+  }
+  .col-time {
+    width: 220px;
+  }
+  .col-status {
+    width: 260px;
+  }
+  .col-due {
+    width: 190px;
   }
 }
 .sort-button {
